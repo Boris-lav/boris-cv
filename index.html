@@ -50,7 +50,26 @@
     h1{margin:0;font-size:32px}
     .tagline{margin:6px 0 10px;color:#cfe4ff}
     .contact{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-    .pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:8px 12px;border-radius:999px}
+    .pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.2);
+  padding:8px 12px;
+  border-radius:999px;
+  color:#ffffff;              /* make text inside pill white */
+}
+
+.pill a {
+  color:#ffffff;              /* force links inside pill to be white */
+  text-decoration:none;       /* optional: remove underline */
+}
+
+.pill a:hover {
+  color:#ffffff;              /* keep white on hover */
+}
+
     .cta{display:inline-flex;align-items:center;gap:10px;background:#ffffff; color:#0f1c3d; border:0;padding:10px 14px;border-radius:12px;font-weight:700; cursor:pointer}
     .cta:focus,.cta:hover{outline:2px solid #cde3ff}
 
